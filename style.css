@@ -11,6 +11,17 @@ body{
 .center{
 	text-align: center;
 }
+/*---- FORM INPUTS ----*/
+input{
+	display: block;
+	margin:4px;
+	width:60%;
+}
+input[type=text]{
+	border:2px solid #9a9a9a;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+}
 /*---- HEADER ----*/
 header{
 	-webkit-user-select: none;
@@ -23,6 +34,7 @@ header{
 	width: 100%;
 	height: 60px;
 	background-color:#c00;
+	opacity: 0.9;
 }
 header #bars img{
 	padding:15px;
@@ -141,6 +153,27 @@ header #logo img{
 	color:#fff !important;
 	text-decoration: none !important;
 }
+/*---- SECTIONS ----*/
+h1.titulo{
+	width: 100%;
+	font-size: 50px;
+	text-align: center;
+	color: #142563;
+	font-weight: lighter;
+	font-style: italic;
+	margin:3px 0 0 0;
+	background-color: #eee;
+	padding:20px;
+	box-sizing: border-box;
+}
+section.content{
+	text-align: center;
+	width: 100%;
+	box-sizing: border-box;
+	padding:20px;
+	background-color: #ddd;
+}
+
 /*---- MEDIA ----*/
 @media screen and (min-width:800px){
 	#menu{
