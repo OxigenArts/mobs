@@ -39,14 +39,39 @@
 <h1 class="titulo">Mensajes en vivo</h1>
 <section class="content">
 	<form action="">
-		<input type="text" placeholder="Nombre" name="nombre">
-		<input type="text" placeholder="Email" name="email">
-		<textarea placeholder="Mensaje" name=""></textarea>
+		<input type="text" placeholder="Nombre" name="nombre" id="input_nombre">
+		<input type="text" placeholder="Email" name="email" id="input_email">
+		<textarea placeholder="Mensaje" name="" id="input_mensaje"></textarea>
 	</form>
 </section>
 <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 var menu_activo = false;
+var active;
+
+$("#input_nombre").click(function() {
+	if (active != "#input_nombre") {
+		$(active).css("border","2px solid #9a9a9a");
+		active = "#input_nombre";
+		$(active).css("border","2px solid #933f3f");
+	}
+});
+
+$("#input_email").click(function() {
+	if (active != "#input_email") {
+		$(active).css("border","2px solid #9a9a9a");
+		active = "#input_email";
+		$(active).css("border","2px solid #933f3f");
+	}
+});
+
+$("#input_mensaje").click(function() {
+	if (active != "#input_mensaje") {
+		$(active).css("border","2px solid #9a9a9a");
+		active = "#input_mensaje";
+		$(active).css("border","2px solid #933f3f");
+	}
+});
 $("#bars img").click(function(){
 	$("#menu").fadeToggle(100);
 });

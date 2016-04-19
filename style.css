@@ -21,13 +21,18 @@ input[type=text]{
 	border:2px solid #9a9a9a;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 20px;
+	outline: none;
+}
+
+textarea {
+	outline: none;
 }
 /*---- HEADER ----*/
 header{
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	user-select: none;          
+	user-select: none;
 	position: fixed;
   	left: 0px;
   	top: 0px;
